@@ -230,12 +230,15 @@ function plusMinus(arr) {
     console.log((zeroNumb / leng).toFixed(6)+" ");
 
 }
-// let a=[-4, 3, -9, 0, 4, 1]
-// plusMinus(a)
+let a=[-4, 3, -9, 0, 4, 1]
+plusMinus(a)
 
-let b=
+let b=[8,4,9,65,5,8,5]
 
-plusMinus(b)
+plusMinus(b);
+
+
+
 
 
 
