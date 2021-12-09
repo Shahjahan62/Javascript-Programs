@@ -119,34 +119,64 @@
 // plusMinus(b);
 
 
-function miniMaxSum(arr) {
-  // Write your code here
-  let len = arr.length;
-  var mini = 0;
-  var max = 0;
-  var c=Math.max.apply(null,arr)
-  var d=  Math.min.apply(null,arr)
+// function miniMaxSum(arr) {
+//   // Write your code here
+//   let len = arr.length;
+//   var mini = 0;
+//   var max = 0;
+//   var c=Math.max.apply(null,arr)
+//   var d=  Math.min.apply(null,arr)
   
 
-  for (let i = 0; i < len; i++) {
+//   for (let i = 0; i < len; i++) {
 
-    if (arr[i] > d) {
-      max += arr[i]
-    }
-    if (arr[i] < c ) {
-      mini += arr[i]
-    }
+//     if (arr[i] > d) {
+//       max += arr[i]
+//     }
+//     if (arr[i] < c ) {
+//       mini += arr[i]
+//     }
 
-  }
-  let x = mini + " " + max
-  console.log(x);
+//   }
+//   let x = mini + " " + max
+//   console.log(x);
+
+// }
+
+// let a = [1, 2, 3, 4, 5]
+
+// miniMaxSum(a);
+
+// let b = [7, 69, 2, 221, 8974]
+
+// miniMaxSum(b);
+
+
+function timeConversion(s) {
+  // Write your code here
+
+
+    
+     let y=s.slice(8,10)
+     
+    var z=s.slice(0,2);
+
+    var hours=Number(z)
+
+     if(y =="PM" && z <12){
+       hours+=12;
+     }else{
+       hours;
+     }
+
+     let hour_24=hours.toString()
+
+     let time=hour_24+":"+"05"+":"+"45"
+
+      
+
+  return time;
+
 
 }
 
-let a = [1, 2, 3, 4, 5]
-
-miniMaxSum(a);
-
-let b = [7, 69, 2, 221, 8974]
-
-miniMaxSum(b);
