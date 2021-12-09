@@ -124,22 +124,22 @@ function miniMaxSum(arr) {
   let len = arr.length;
   var mini = 0;
   var max = 0;
-
+  var c=Math.max.apply(null,arr)
+  var d=  Math.min.apply(null,arr)
+  
 
   for (let i = 0; i < len; i++) {
 
-    if (arr[i] > arr[0]) {
+    if (arr[i] > d) {
       max += arr[i]
     }
-    if (arr[i] < arr[4]) {
+    if (arr[i] < c ) {
       mini += arr[i]
     }
 
   }
   let x = mini + " " + max
   console.log(x);
-
-
 
 }
 
