@@ -126,7 +126,7 @@
 //   var max = 0;
 //   var c=Math.max.apply(null,arr)
 //   var d=  Math.min.apply(null,arr)
-  
+
 
 //   for (let i = 0; i < len; i++) {
 
@@ -152,31 +152,55 @@
 // miniMaxSum(b);
 
 
-function timeConversion(s) {
-  // Write your code here
+// function timeConversion(s) {
+//   // Write your code here
 
 
-    
-     let y=s.slice(8,10)
-     
-    var z=s.slice(0,2);
 
-    var hours=Number(z)
+//      let y=s.slice(8,10)
 
-     if(y =="PM" && z <12){
-       hours+=12;
-     }else{
-       hours;
-     }
+//     var z=s.slice(0,2);
 
-     let hour_24=hours.toString()
+//     var hours=Number(z)
 
-     let time=hour_24+":"+"05"+":"+"45"
+//      if(y =="PM" && z <12){
+//        hours+=12;
+//      }else{
+//        hours;
+//      }
 
-      
+//      let hour_24=hours.toString()
 
-  return time;
+//      let time=hour_24+":"+"05"+":"+"45"
 
 
-}
+
+//   return time;
+
+
+// }
+
+// let x=timeConversion("01:05:45PM")
+
+
+// console.log(x);
+
+function gradingStudents(grades) {
+  //Write your code here
+  
+    const rndGrades = grades.map(grds => {
+      if (grds >= 38 && grds % 5 >= 3) {
+        while (grds % 5 != 0) {
+          grds++
+        }
+      }
+      return grds
+    })
+    return rndGrades;
+  }
+
+
+let a = gradingStudents([4, 73, 67, 38, 33])
+
+console.log(a)
 
