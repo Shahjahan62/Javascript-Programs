@@ -185,22 +185,35 @@
 
 // console.log(x);
 
-function gradingStudents(grades) {
-  //Write your code here
+// function gradingStudents(grades) {
+//   //Write your code here
   
-    const rndGrades = grades.map(grds => {
-      if (grds >= 38 && grds % 5 >= 3) {
-        while (grds % 5 != 0) {
-          grds++
-        }
-      }
-      return grds
-    })
-    return rndGrades;
-  }
+//     const rndGrades = grades.map(grds => {
+//       if (grds >= 38 && grds % 5 >= 3) {
+//         while (grds % 5 != 0) {
+//           grds++
+//         }
+//       }
+//       return grds
+//     })
+//     return rndGrades;
+//   }
 
 
-let a = gradingStudents([4, 73, 67, 38, 33])
+// let a = gradingStudents([4, 73, 67, 38, 33])
 
-console.log(a)
+// console.log(a)
 
+function breakingRecords(scores) {
+  // Write your code here
+
+  
+
+
+
+
+}
+
+const a=breakingRecords([10,5,20,20,4,5,2,25,1])
+
+console.log(a);

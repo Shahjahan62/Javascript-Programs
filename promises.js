@@ -62,26 +62,26 @@
 
 
 
-let str="This is a pen";
+// let str="This is a pen";
 
-let x=str.includes("Is");
+// let x=str.includes("Is");
 
-let y=str.split(" ")
-console.log(y);
+// let y=str.split(" ")
+// console.log(y);
 
-console.log(y.keys());
+// console.log(y.keys());
 
-// for(let x of y.keys()){
-//     console.log(x);
+// // for(let x of y.keys()){
+// //     console.log(x);
+// // }
+
+// let f=y.find(Find)
+
+// function Find(value){
+//     return value =="a"
 // }
 
-let f=y.find(Find)
-
-function Find(value){
-    return value =="a"
-}
-
-console.log(f);
+// console.log(f);
 1
 
 // console.log(x);
@@ -91,3 +91,27 @@ console.log(f);
 
 // console.log(z);
 // console.log(a);
+
+
+function promise(a,b) {
+    return new Promise(function (resolve, reject) {
+        console.log("please wait...");
+        var c=a*b;
+        setTimeout(() => {
+            if (c==10) {
+                resolve("Your code is succeeded")
+
+            } else {
+                reject("Your code is rejected")
+
+            }
+        }, 3000);
+
+    })
+}
+
+promise(5,5).then((result) => {
+    console.log(result);
+}).catch((error) => {
+    console.log(error);
+})
