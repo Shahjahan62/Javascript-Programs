@@ -207,24 +207,20 @@
 
 function birthdayCakeCandles(candles) {
   // Write your code here
-  let len = candles.length;
-  var Max = Math.max.apply(candles.map((el)=>{
-    return el.length;
-  }))
 
-  var sum = 0;
-  for (let i = 0; i < len; i++) {
-    if (candles[i] == Max) {
-      sum == Max;
-    }
-    else {
-      sum == candles[i];
-    }
-  }
-  return sum
+
+
+  var maxi=Math.max.apply(null,candles);
+
+  var d=candles.filter((value)=>maxi===value)
+
+  let len=d.length;
+
+return len ;
+  
 }
 
-let a = birthdayCakeCandles([3, 2, 1, 3])
+let a = birthdayCakeCandles([3, 2, 1, 3,3])
 
 console.log(a);
 
