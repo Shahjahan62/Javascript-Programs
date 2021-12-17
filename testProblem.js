@@ -1,13 +1,16 @@
 
 
 
-function Airport(startPoint,endPoint,cost) {
+function Airport(start,end,cost) {
 
 
-    return startPoint;
+    return start+end;
 }
 
-let a= Airport[
+let a= Airport[a]
+
+
+Airport[
     {
         start: 'ISB',
         end: 'LHR',

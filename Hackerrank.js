@@ -187,7 +187,7 @@
 
 // function gradingStudents(grades) {
 //   //Write your code here
-  
+
 //     const rndGrades = grades.map(grds => {
 //       if (grds >= 38 && grds % 5 >= 3) {
 //         while (grds % 5 != 0) {
@@ -204,16 +204,27 @@
 
 // console.log(a)
 
-function breakingRecords(scores) {
+
+function birthdayCakeCandles(candles) {
   // Write your code here
+  let len = candles.length;
+  var Max = Math.max.apply(candles.map((el)=>{
+    return el.length;
+  }))
 
-  
-
-
-
-
+  var sum = 0;
+  for (let i = 0; i < len; i++) {
+    if (candles[i] == Max) {
+      sum == Max;
+    }
+    else {
+      sum == candles[i];
+    }
+  }
+  return sum
 }
 
-const a=breakingRecords([10,5,20,20,4,5,2,25,1])
+let a = birthdayCakeCandles([3, 2, 1, 3])
 
 console.log(a);
+
