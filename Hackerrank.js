@@ -205,22 +205,64 @@
 // console.log(a)
 
 
-function birthdayCakeCandles(candles) {
+// function birthdayCakeCandles(candles) {
+//   // Write your code here
+
+
+
+//   var maxi=Math.max.apply(null,candles);
+
+//   var d=candles.filter((value)=>maxi===value)
+
+//   let len=d.length;
+
+// return len ;
+
+// }
+
+// let a = birthdayCakeCandles([3, 2, 1, 3,3])
+
+// console.log(a);
+
+
+
+
+
+
+
+
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
   // Write your code here
 
+  var firstApple = apples.map(result => {
+    return a + result;
+  })
+  var firstOranges = oranges.map((rslt) => {
+    return b + rslt;
+  })
+
+  var appleFalls = firstApple.forEach(app => {
+    if (app >= s && app <= t) {
+      let len=app.split()
+      console.log(len);
+      
+    }
+  })
+  var orangeFalls = firstOranges.forEach(ora => {
+
+    if (ora >= s && ora <= t) {
+      let  len=ora.split()
+       console.log(len);
+
+    }
+  })
 
 
-  var maxi=Math.max.apply(null,candles);
+ return appleFalls + '\n'+orangeFalls;
 
-  var d=candles.filter((value)=>maxi===value)
-
-  let len=d.length;
-
-return len ;
-  
 }
 
-let a = birthdayCakeCandles([3, 2, 1, 3,3])
+let a = countApplesAndOranges(7, 11, 5, 15, [-2, 2, 1], [5, -6])
 
 console.log(a);
 
