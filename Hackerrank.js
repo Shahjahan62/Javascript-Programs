@@ -19,20 +19,10 @@
 
 
 
-// let text;
-// let text1;
-// let text2;
 
 
-// if (a[0] > b[0]) {
-//     text = [1, 1]
-// }
-// if (a[1] = b[1]) {
-//     text1 = [1, 0]
-// }
-// if (a[2] < b[2]) {
-//     text2 = [0, 1]
-// };
+
+
 
 //     function compareTriplets(a, b) {
 //    // Write your code here
@@ -62,6 +52,14 @@
 // console.log(x);
 
 
+
+
+
+
+
+
+
+
 // function aVeryBigSum(ar) {
 //     // Write your code here
 //      var sum=0;
@@ -77,6 +75,15 @@
 // let x=aVeryBigSum([1000000001,1000000002,1000000003,1000000004,1000000005])
 
 // console.log(x)
+
+
+
+
+
+
+
+
+
 
 
 // function plusMinus(arr) {
@@ -119,6 +126,12 @@
 // plusMinus(b);
 
 
+
+
+
+
+
+
 // function miniMaxSum(arr) {
 //   // Write your code here
 //   let len = arr.length;
@@ -150,6 +163,14 @@
 // let b = [7, 69, 2, 221, 8974]
 
 // miniMaxSum(b);
+
+
+
+
+
+
+
+
 
 
 // function timeConversion(s) {
@@ -185,6 +206,15 @@
 
 // console.log(x);
 
+
+
+
+
+
+
+
+
+
 // function gradingStudents(grades) {
 //   //Write your code here
 
@@ -203,6 +233,14 @@
 // let a = gradingStudents([4, 73, 67, 38, 33])
 
 // console.log(a)
+
+
+
+
+
+
+
+
 
 
 // function birthdayCakeCandles(candles) {
@@ -231,38 +269,75 @@
 
 
 
-function countApplesAndOranges(s, t, a, b, apples, oranges) {
+
+
+// function countApplesAndOranges(s, t, a, b, apples, oranges) {
+//   // Write your code here
+
+//   var firstApple = apples.map(result => {
+//     return a + result;
+//   })
+//   var firstOranges = oranges.map((rslt) => {
+//     return b + rslt;
+//   })
+
+//   var appleFalls = firstApple.filter(app => {
+
+//     let a = app >= 7 && app <= 11
+
+//     return a
+//   })
+//   var orangeFalls = firstOranges.filter(ora => {
+
+//     let b = ora >= 7 && ora <= 11
+
+//     return b
+//   })
+
+
+//   return appleFalls.length + '\n' + orangeFalls.length;
+
+// }
+
+// let a = countApplesAndOranges(7, 11, 5, 15, [-2, 2, 1], [5, -6])
+
+// console.log(a);
+
+
+
+
+
+
+
+
+function kangaroo(x1, v1, x2, v2) {
   // Write your code here
 
-  var firstApple = apples.map(result => {
-    return a + result;
-  })
-  var firstOranges = oranges.map((rslt) => {
-    return b + rslt;
-  })
 
-  var appleFalls = firstApple.forEach(app => {
-    if (app >= s && app <= t) {
-      let len=app.split()
-      console.log(len);
-      
-    }
-  })
-  var orangeFalls = firstOranges.forEach(ora => {
+  var kang = kangaroo.forEach(function (value) {
 
-    if (ora >= s && ora <= t) {
-      let  len=ora.split()
-       console.log(len);
+    var firstKang = x1 + v1;
+    var secKang = x2 + v2
 
+    if (firstKang === secKang) {
+      console.log("YES");
+    } 
+    else {
+      console.log("NO");
     }
   })
 
-
- return appleFalls + '\n'+orangeFalls;
+  return kang
 
 }
 
-let a = countApplesAndOranges(7, 11, 5, 15, [-2, 2, 1], [5, -6])
+let a = 0;
+let b = 3;
+let c = 4
+let d = 2
+let fun = kangaroo([a, b, c, d])
 
-console.log(a);
+console.log(fun);
+
+
 
