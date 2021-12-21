@@ -42,19 +42,6 @@ console.log(fun);
 
 
 
-// var firstKang = x1 + v1;
-// var secKang = x2 + v2
-
-
-//   if (firstKang === secKang) {
-//     return "YES"
-//   } 
-//   else if(firstKang !==secKang){
-//     return  "NO";
-//   }
-
-
-
 
 
 
